@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-06-13T18:00:00+00:00",
+  "total_iocs": 2,
+  "summary": {
+    "malicious": 1,
+    "suspicious": 1,
+    "clean": 0
+  },
+  "results": [
+    {
+      "ioc": "185.220.101.45",
+      "type": "ip",
+      "risk_score": 87,
+      "verdict": "MALICIOUS",
+      "signals": [
+        "VT: 14 malicious engines (14/93)",
+        "AbuseIPDB confidence: 100%",
+        "AbuseIPDB: 2341 reports from 487 users",
+        "AbuseIPDB: Tor exit node",
+        "OTX: found in 23 threat pulse(s)",
+        "OTX adversary attribution: APT28",
+        "OTX malware families: Cobalt Strike, Emotet"
+      ],
+      "enrichments": [
+        {
+          "source": "VirusTotal",
+          "malicious_engines": 14,
+          "suspicious_engines": 2,
+          "total_engines": 93,
+          "detection_ratio": "14/93",
+          "reputation": -100,
+          "country": "DE",
+          "asn": 212943,
+          "as_owner": "PVDATANET",
+          "network": "185.220.100.0/22"
+        },
+        {
+          "source": "AbuseIPDB",
+          "abuse_confidence_score": 100,
+          "total_reports": 2341,
+          "distinct_users_reporting": 487,
+          "last_reported_at": "2026-06-13T17:42:00+00:00",
+          "country_code": "DE",
+          "usage_type": "Data Center/Web Hosting/Transit",
+          "isp": "Frantech Solutions",
+          "is_tor": true,
+          "is_public": true,
+          "is_whitelisted": false
+        },
+        {
+          "source": "OTX",
+          "pulse_count": 23,
+          "pulse_names": [
+            "Tor Exit Nodes - June 2026",
+            "Cobalt Strike C2 Infrastructure",
+            "APT28 Campaign IOCs"
+          ],
+          "malware_families": ["Cobalt Strike", "Emotet"],
+          "adversary": ["APT28"],
+          "country_name": "Germany",
+          "city": "Frankfurt",
+          "asn": "AS212943"
+        }
+      ],
+      "enriched_at": "2026-06-13T18:00:00+00:00"
+    },
+    {
+      "ioc": "update-security-patch.com",
+      "type": "domain",
+      "risk_score": 42,
+      "verdict": "SUSPICIOUS",
+      "signals": [
+        "VT: 3 malicious engines (3/93)",
+        "OTX: found in 2 threat pulse(s)"
+      ],
+      "enrichments": [
+        {
+          "source": "VirusTotal",
+          "malicious_engines": 3,
+          "suspicious_engines": 1,
+          "total_engines": 93,
+          "detection_ratio": "3/93",
+          "reputation": -5,
+          "registrar": "NameCheap, Inc.",
+          "creation_date": 1748390400,
+          "categories": {}
+        },
+        {
+          "source": "OTX",
+          "pulse_count": 2,
+          "pulse_names": ["Phishing Domains 2026-05"],
+          "malware_families": [],
+          "alexa_rank": null
+        }
+      ],
+      "enriched_at": "2026-06-13T18:00:00+00:00"
+    }
+  ]
+}

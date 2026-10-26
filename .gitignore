@@ -1,0 +1,24 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+
+# Reports (don't commit real IOC data)
+*.json
+!examples/sample_output.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
