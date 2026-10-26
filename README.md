@@ -12,6 +12,15 @@ Built for SOC analysts and detection engineers who need fast, automated IOC tria
 
 ---
 
+## Project Timeline
+
+- **June 2026** — The initial IOC enrichment pipeline was developed.
+- **October 2026** — The project was consolidated under the `thapaswin125/IOC-Toolkit` repository and published as the current milestone.
+
+Commit dates remain unchanged so the repository history accurately reflects when work was performed.
+
+---
+
 ## Features
 
 - **Multi-source enrichment** — VirusTotal v3, AbuseIPDB v2, AlienVault OTX, queried concurrently
