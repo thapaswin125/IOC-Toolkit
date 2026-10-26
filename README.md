@@ -50,8 +50,8 @@ Commit dates remain unchanged so the repository history accurately reflects when
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/ClockworkZMP/ioc-enrichment-pipeline.git
-cd ioc-enrichment-pipeline
+git clone https://github.com/thapaswin125/IOC-Toolkit.git
+cd IOC-Toolkit
 pip install -r requirements.txt
 ```
 
@@ -176,7 +176,7 @@ JSON output can be passed directly to SOAR platforms like Tines or Torq as a web
 ## Project Structure
 
 ```
-ioc-enrichment-pipeline/
+IOC-Toolkit/
 ├── ioc_enricher.py        # CLI entrypoint
 ├── enrichers/
 │   ├── virustotal.py      # VirusTotal v3 API
